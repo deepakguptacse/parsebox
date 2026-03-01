@@ -1,0 +1,13 @@
+anthropic>=0.52
+claude-agent-sdk>=0.1
+rich>=13.0
+prompt-toolkit>=3.0
+pydantic>=2.11
+duckdb>=1.1
+pyarrow>=19.0
+pandas>=2.2
+pypdf>=6.0
+litellm>=1.55
+instructor>=1.8
+fastapi>=0.115
+uvicorn[standard]>=0.34
