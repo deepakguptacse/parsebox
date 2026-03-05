@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parsebox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    #messages { scroll-behavior: smooth; }
+    .msg-agent pre { background: #1e1b2e; border-radius: 0.5rem; padding: 1rem; overflow-x: auto; margin: 0.5rem 0; }
+    .msg-agent code { font-size: 0.85em; }
+    .msg-agent p { margin-bottom: 0.5rem; }
+    .msg-agent table { border-collapse: collapse; margin: 0.5rem 0; width: 100%; }
+    .msg-agent th, .msg-agent td { border: 1px solid #374151; padding: 0.35rem 0.75rem; text-align: left; font-size: 0.85em; }
+    .msg-agent th { background: #1f2937; font-weight: 600; }
+    .typing-dot { animation: blink 1.4s infinite both; }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes blink { 0%, 80%, 100% { opacity: 0.2; } 40% { opacity: 1; } }
+    .suggestion-chip { transition: all 0.15s; }
+    .suggestion-chip:hover { background: #4338ca; border-color: #4338ca; color: white; }
+    .fade-in { animation: fadeIn 0.3s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 px-4 py-3 flex items-center justify-between shrink-0">
+    <div class="flex items-center gap-3">
+      <a href="/" class="text-lg font-bold gradient-text">parsebox</a>
+      <span id="dataset-badge" class="text-xs bg-gray-800 text-gray-400 px-2 py-0.5 rounded mono hidden"></span>
+    </div>
+    <div class="flex items-center gap-3">
+      <span id="msg-counter" class="text-xs text-gray-500 mono hidden"></span>
+      <button onclick="resetSession()" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">New session</button>
+    </div>
+  </header>
+
+  <!-- Picker (shown before session) -->
+  <div id="picker" class="flex-1 overflow-y-auto flex items-start justify-center px-4 py-10">
+    <div class="max-w-md w-full">
+      <!-- Active sessions (populated dynamically) -->
+      <div id="sessions-section" class="hidden mb-10">
+        <h2 class="text-2xl font-bold mb-2 text-center">Your sessions</h2>
+        <p class="text-gray-400 text-sm text-center mb-6">Resume where you left off.</p>
+        <div id="sessions-list" class="space-y-3"></div>
+      </div>
+
+      <!-- New dataset section -->
+      <div id="datasets-section">
+        <h2 id="datasets-heading" class="text-2xl font-bold mb-2 text-center">Pick a dataset</h2>
+        <p class="text-gray-400 text-sm text-center mb-8">Choose a sample dataset to explore with the agent.</p>
+        <div id="picker-datasets" class="space-y-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat area (hidden until session starts) -->
+  <div id="chat-area" class="flex-1 flex flex-col hidden">
+    <!-- Messages -->
+    <div id="messages" class="flex-1 overflow-y-auto px-4 py-6 space-y-4">
+    </div>
+
+    <!-- Suggestions -->
+    <div id="suggestions" class="px-4 pb-2 flex flex-wrap gap-2 hidden"></div>
+
+    <!-- Input -->
+    <div class="border-t border-gray-800 px-4 py-3 shrink-0">
+      <form id="chat-form" class="flex gap-2">
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Ask something..."
+          autocomplete="off"
+          class="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+          disabled
+        >
+        <button
+          type="submit"
+          id="send-btn"
+          class="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+          disabled
+        >Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let ws = null;
+    let sessionId = null;
+    let isAgentThinking = false;
+    let isResumedSession = false;
+
+    const messagesEl = document.getElementById('messages');
+    const pickerEl = document.getElementById('picker');
+    const chatAreaEl = document.getElementById('chat-area');
+    const chatInput = document.getElementById('chat-input');
+    const sendBtn = document.getElementById('send-btn');
+    const suggestionsEl = document.getElementById('suggestions');
+    const datasetBadge = document.getElementById('dataset-badge');
+    const msgCounter = document.getElementById('msg-counter');
+
+    // -- Init --
+    const params = new URLSearchParams(window.location.search);
+    const preselectedDataset = params.get('dataset');
+    const preselectedSession = params.get('session');
+
+    if (preselectedSession) {
+      resumeSession(preselectedSession);
+    } else if (preselectedDataset) {
+      startSession(preselectedDataset);
+    } else {
+      loadPicker();
+    }
+
+    // -- Picker --
+    async function loadPicker() {
+      const [sessionsRes, samplesRes] = await Promise.all([
+        fetch('/api/sessions'),
+        fetch('/api/samples'),
+      ]);
+      const sessionsData = await sessionsRes.json();
+      const samplesData = await samplesRes.json();
+
+      // Show active sessions if any exist
+      if (sessionsData.sessions && sessionsData.sessions.length > 0) {
+        const sessionsSection = document.getElementById('sessions-section');
+        const sessionsList = document.getElementById('sessions-list');
+        sessionsSection.classList.remove('hidden');
+        document.getElementById('datasets-heading').textContent = 'Or start a new session';
+
+        sessionsData.sessions.forEach(s => {
+          const btn = document.createElement('button');
+          btn.className = 'w-full bg-gray-900 border border-gray-800 hover:border-indigo-500 rounded-xl p-5 text-left transition-colors';
+          const timeAgo = formatTimeAgo(s.created_at);
+          btn.innerHTML = `
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-semibold">${escapeHtml(s.dataset_name)}</span>
+              <span class="text-xs text-gray-500">${timeAgo}</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+              <span class="text-indigo-400 mono">${s.messages_remaining} messages left</span>
+              <span class="text-gray-500">${s.status}</span>
+            </div>
+          `;
+          btn.onclick = () => resumeSession(s.session_id, s.dataset_name, s.messages_remaining);
+          sessionsList.appendChild(btn);
+        });
+      }
+
+      const container = document.getElementById('picker-datasets');
+      samplesData.samples.forEach(s => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full bg-gray-900 border border-gray-800 hover:border-indigo-500 rounded-xl p-5 text-left transition-colors';
+        btn.innerHTML = `
+          <div class="font-semibold mb-1">${s.name}</div>
+          <div class="text-sm text-gray-400">${s.description}</div>
+          <div class="text-xs text-indigo-400 mono mt-2">${s.file_count} files</div>
+        `;
+        btn.onclick = () => startSession(s.key);
+        container.appendChild(btn);
+      });
+    }
+
+    // -- New session --
+    async function startSession(datasetKey) {
+      isResumedSession = false;
+      pickerEl.classList.add('hidden');
+      chatAreaEl.classList.remove('hidden');
+      addSystemMessage('Starting session...');
+
+      try {
+        const res = await fetch('/api/sessions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ dataset: datasetKey }),
+        });
+        const data = await res.json();
+
+        if (data.error) {
+          clearMessages();
+          addSystemMessage('Error: ' + data.error);
+          return;
+        }
+
+        sessionId = data.session_id;
+        datasetBadge.textContent = data.dataset_name;
+        datasetBadge.classList.remove('hidden');
+        msgCounter.classList.remove('hidden');
+        updateCounter(data.message_limit);
+
+        connectWebSocket(sessionId, data.dataset_name);
+      } catch (e) {
+        clearMessages();
+        addSystemMessage('Failed to create session. Please try again.');
+      }
+    }
+
+    // -- Resume existing session --
+    async function resumeSession(sid, datasetName, messagesRemaining) {
+      isResumedSession = true;
+      pickerEl.classList.add('hidden');
+      chatAreaEl.classList.remove('hidden');
+
+      // If we don't have metadata (e.g. from URL param), fetch it
+      if (!datasetName) {
+        try {
+          const res = await fetch('/api/sessions');
+          const data = await res.json();
+          const found = data.sessions.find(s => s.session_id === sid);
+          if (!found) {
+            addSystemMessage('Session not found. It may have expired.');
+            return;
+          }
+          datasetName = found.dataset_name;
+          messagesRemaining = found.messages_remaining;
+        } catch (e) {
+          addSystemMessage('Failed to load session.');
+          return;
+        }
+      }
+
+      sessionId = sid;
+      datasetBadge.textContent = datasetName;
+      datasetBadge.classList.remove('hidden');
+      msgCounter.classList.remove('hidden');
+      updateCounter(messagesRemaining);
+
+      // Replay message history
+      try {
+        const res = await fetch(`/api/sessions/${sid}/messages`);
+        const data = await res.json();
+        if (data.messages && data.messages.length > 0) {
+          data.messages.forEach(msg => {
+            if (msg.role === 'user') {
+              addUserMessage(msg.content);
+            } else if (msg.role === 'assistant') {
+              addAgentMessage(msg.content);
+            }
+          });
+        }
+      } catch (e) {
+        // Replay failed, still connect
+      }
+
+      connectWebSocket(sid, datasetName);
+    }
+
+    function connectWebSocket(sid, datasetName) {
+      const protocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+      ws = new WebSocket(`${protocol}//${location.host}/api/chat/${sid}`);
+
+      ws.onopen = () => {
+        if (!isResumedSession) {
+          // Clear "Starting session..." and send auto-kick
+          clearMessages();
+          const kickMessage = `I'd like to explore and extract structured data from the ${datasetName} dataset. Look at the files, ingest them, and suggest a schema.`;
+          addUserMessage(kickMessage);
+          disableInput();
+          isAgentThinking = true;
+          ws.send(JSON.stringify({ message: kickMessage }));
+        } else {
+          enableInput();
+        }
+      };
+
+      ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        handleServerEvent(data);
+      };
+
+      ws.onclose = () => {
+        disableInput();
+      };
+
+      ws.onerror = () => {
+        addSystemMessage('Connection error.');
+      };
+    }
+
+    // -- Message handling --
+    function handleServerEvent(data) {
+      switch (data.type) {
+        case 'text':
+          appendAgentText(data.content);
+          break;
+        case 'tool_use':
+          addToolIndicator(data.tool);
+          break;
+        case 'done':
+          finalizeAgentMessage();
+          if (data.messages_remaining !== undefined) {
+            updateCounter(data.messages_remaining);
+          }
+          if (data.suggestions && data.suggestions.length > 0) {
+            showSuggestions(data.suggestions);
+          }
+          enableInput();
+          break;
+        case 'error':
+          addSystemMessage(data.content);
+          enableInput();
+          break;
+      }
+    }
+
+    let currentAgentMsgEl = null;
+    let currentAgentText = '';
+
+    function appendAgentText(text) {
+      removeTypingIndicator();
+      if (!currentAgentMsgEl) {
+        currentAgentMsgEl = document.createElement('div');
+        currentAgentMsgEl.className = 'msg-agent bg-gray-900 rounded-xl px-5 py-4 max-w-3xl fade-in';
+        currentAgentMsgEl.innerHTML = '<div class="msg-content text-sm leading-relaxed"></div>';
+        messagesEl.appendChild(currentAgentMsgEl);
+      }
+      currentAgentText += text;
+      const contentEl = currentAgentMsgEl.querySelector('.msg-content');
+      contentEl.innerHTML = marked.parse(currentAgentText);
+      scrollToBottom();
+    }
+
+    function finalizeAgentMessage() {
+      removeTypingIndicator();
+      if (currentAgentMsgEl) {
+        const contentEl = currentAgentMsgEl.querySelector('.msg-content');
+        contentEl.innerHTML = marked.parse(currentAgentText);
+      }
+      currentAgentMsgEl = null;
+      currentAgentText = '';
+      isAgentThinking = false;
+      scrollToBottom();
+    }
+
+    // Render a complete agent message (used for history replay)
+    function addAgentMessage(text) {
+      const el = document.createElement('div');
+      el.className = 'msg-agent bg-gray-900 rounded-xl px-5 py-4 max-w-3xl';
+      el.innerHTML = `<div class="msg-content text-sm leading-relaxed">${marked.parse(text)}</div>`;
+      messagesEl.appendChild(el);
+      scrollToBottom();
+    }
+
+    function addToolIndicator(toolName) {
+      removeTypingIndicator();
+      if (currentAgentMsgEl) {
+        finalizeAgentMessage();
+      }
+      const labels = {
+        list_source_files: 'Listing files',
+        read_file_sample: 'Reading file',
+        get_file_info: 'Checking file',
+        ingest_files: 'Ingesting files',
+        list_documents: 'Listing documents',
+        read_document: 'Reading document',
+        get_schema: 'Loading schema',
+        set_schema: 'Saving schema',
+        extract_sample: 'Extracting sample',
+        extract_all: 'Extracting all documents',
+        query_sql: 'Running query',
+        describe_table: 'Describing table',
+        search_files: 'Searching files',
+      };
+      const label = labels[toolName] || toolName;
+      const el = document.createElement('div');
+      el.className = 'flex items-center gap-2 text-xs text-gray-500 px-2 fade-in';
+      el.innerHTML = `
+        <div class="flex gap-1">
+          <span class="typing-dot w-1.5 h-1.5 bg-indigo-400 rounded-full inline-block"></span>
+          <span class="typing-dot w-1.5 h-1.5 bg-indigo-400 rounded-full inline-block"></span>
+          <span class="typing-dot w-1.5 h-1.5 bg-indigo-400 rounded-full inline-block"></span>
+        </div>
+        <span>${label}...</span>
+      `;
+      el.id = 'typing-indicator';
+      messagesEl.appendChild(el);
+      scrollToBottom();
+    }
+
+    function removeTypingIndicator() {
+      const el = document.getElementById('typing-indicator');
+      if (el) el.remove();
+    }
+
+    function addUserMessage(text) {
+      const el = document.createElement('div');
+      el.className = 'flex justify-end fade-in';
+      el.innerHTML = `<div class="bg-indigo-600 rounded-xl px-5 py-3 max-w-2xl text-sm">${escapeHtml(text)}</div>`;
+      messagesEl.appendChild(el);
+      scrollToBottom();
+    }
+
+    function addSystemMessage(text) {
+      const el = document.createElement('div');
+      el.className = 'text-center text-xs text-gray-500 py-2 fade-in';
+      el.textContent = text;
+      messagesEl.appendChild(el);
+      scrollToBottom();
+    }
+
+    function clearMessages() {
+      messagesEl.innerHTML = '';
+    }
+
+    // -- Suggestions --
+    function showSuggestions(items) {
+      suggestionsEl.innerHTML = '';
+      items.forEach(text => {
+        const chip = document.createElement('button');
+        chip.className = 'suggestion-chip border border-gray-700 text-gray-300 text-xs px-3 py-1.5 rounded-full';
+        chip.textContent = text;
+        chip.onclick = () => {
+          hideSuggestions();
+          chatInput.value = text;
+          document.getElementById('chat-form').dispatchEvent(new Event('submit'));
+        };
+        suggestionsEl.appendChild(chip);
+      });
+      suggestionsEl.classList.remove('hidden');
+    }
+
+    function hideSuggestions() {
+      suggestionsEl.classList.add('hidden');
+      suggestionsEl.innerHTML = '';
+    }
+
+    // -- Input --
+    function sendMessage(text) {
+      if (!ws || ws.readyState !== WebSocket.OPEN || !text.trim()) return;
+      hideSuggestions();
+      addUserMessage(text);
+      disableInput();
+      isAgentThinking = true;
+      ws.send(JSON.stringify({ message: text }));
+    }
+
+    document.getElementById('chat-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = chatInput.value.trim();
+      if (!text) return;
+      chatInput.value = '';
+      sendMessage(text);
+    });
+
+    function enableInput() {
+      chatInput.disabled = false;
+      sendBtn.disabled = false;
+      chatInput.focus();
+    }
+
+    function disableInput() {
+      chatInput.disabled = true;
+      sendBtn.disabled = true;
+    }
+
+    function updateCounter(remaining) {
+      msgCounter.textContent = `${remaining} messages left`;
+    }
+
+    // -- Helpers --
+    function scrollToBottom() {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function formatTimeAgo(isoString) {
+      const date = new Date(isoString);
+      const now = new Date();
+      const diffMs = now - date;
+      const diffMin = Math.floor(diffMs / 60000);
+      if (diffMin < 1) return 'just now';
+      if (diffMin < 60) return `${diffMin}m ago`;
+      const diffHr = Math.floor(diffMin / 60);
+      if (diffHr < 24) return `${diffHr}h ago`;
+      return `${Math.floor(diffHr / 24)}d ago`;
+    }
+
+    function resetSession() {
+      if (ws) ws.close();
+      sessionId = null;
+      currentAgentMsgEl = null;
+      currentAgentText = '';
+      isResumedSession = false;
+      window.location.href = '/chat';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parsebox -- documents to structured data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    code, .mono { font-family: 'JetBrains Mono', monospace; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+
+  <!-- Nav -->
+  <nav class="border-b border-gray-800 px-6 py-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-xl font-bold gradient-text">parsebox</span>
+        <span class="text-xs text-gray-500 mono">v0.2</span>
+      </div>
+      <a href="/chat" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+        Try it now
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+    <div class="max-w-3xl">
+      <h1 class="text-5xl font-bold leading-tight mb-6">
+        Turn documents into<br>
+        <span class="gradient-text">structured data</span>
+      </h1>
+      <p class="text-xl text-gray-400 mb-8 leading-relaxed">
+        Point parsebox at a folder of documents. An AI agent reads them, proposes a schema,
+        extracts structured records, and answers your questions -- all through conversation.
+      </p>
+      <div class="flex gap-4">
+        <a href="/chat" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+          Try the demo
+        </a>
+        <a href="https://github.com/deepakguptacse/parsebox" target="_blank" class="border border-gray-700 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-colors">
+          View source
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold mb-10">How it works</h2>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 card-hover">
+        <div class="text-indigo-400 text-sm font-medium mono mb-3">01</div>
+        <h3 class="font-semibold mb-2">Explore</h3>
+        <p class="text-sm text-gray-400">The agent reads your files and understands their structure -- PDFs, text, CSV, Markdown.</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 card-hover">
+        <div class="text-indigo-400 text-sm font-medium mono mb-3">02</div>
+        <h3 class="font-semibold mb-2">Schema</h3>
+        <p class="text-sm text-gray-400">It proposes a schema for extraction. You refine it through conversation until it's right.</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 card-hover">
+        <div class="text-indigo-400 text-sm font-medium mono mb-3">03</div>
+        <h3 class="font-semibold mb-2">Extract</h3>
+        <p class="text-sm text-gray-400">Preview on a sample first. When it looks right, extract from all documents.</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 card-hover">
+        <div class="text-indigo-400 text-sm font-medium mono mb-3">04</div>
+        <h3 class="font-semibold mb-2">Query</h3>
+        <p class="text-sm text-gray-400">Ask questions in plain English. The agent writes SQL and shows you the results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample datasets -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold mb-3">Try with sample data</h2>
+    <p class="text-gray-400 mb-8">No signup, no API key, no uploads. Pick a dataset and start chatting.</p>
+    <div class="grid md:grid-cols-2 gap-6" id="samples"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-16 py-8 px-6">
+    <div class="max-w-5xl mx-auto flex items-center justify-between text-sm text-gray-500">
+      <span>parsebox -- built with Claude Agent SDK</span>
+      <a href="https://github.com/deepakguptacse/parsebox" target="_blank" class="hover:text-gray-300 transition-colors">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    fetch('/api/samples')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('samples');
+        data.samples.forEach(s => {
+          container.innerHTML += `
+            <a href="/chat?dataset=${s.key}" class="bg-gray-900 border border-gray-800 rounded-xl p-6 card-hover block">
+              <h3 class="font-semibold mb-2">${s.name}</h3>
+              <p class="text-sm text-gray-400 mb-3">${s.description}</p>
+              <span class="text-xs text-indigo-400 mono">${s.file_count} files</span>
+            </a>
+          `;
+        });
+      });
+  </script>
+
+</body>
+</html>

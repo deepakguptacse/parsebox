@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.git/
+.pytest_cache/
+.parsebox/
+.env
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+tests/
+ui/
+app.py
+plan.md
+.streamlit/
