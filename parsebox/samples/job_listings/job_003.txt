@@ -1,0 +1,45 @@
+Product Manager, Cloud Infrastructure
+Horizon Technologies Inc.
+
+Location: Seattle, WA or Austin, TX
+Department: Cloud Platform
+Job Type: Full-time
+Level: L6 (Senior)
+Salary: $165,000 - $210,000 annually
+
+WHO WE ARE
+Horizon Technologies is a Fortune 500 technology company serving over 50 million users
+globally. Our Cloud Platform division powers enterprise-grade infrastructure solutions
+for thousands of businesses worldwide.
+
+THE ROLE
+We are looking for an experienced Product Manager to own the roadmap for our core
+compute and networking services. You will work at the intersection of engineering,
+design, and business strategy to define the future of our cloud platform offerings.
+
+WHAT YOU WILL DO
+- Define product vision and roadmap for compute and networking services
+- Gather and prioritize requirements from enterprise customers and internal stakeholders
+- Write detailed product specifications and user stories
+- Partner with engineering teams across 3 time zones to deliver quarterly releases
+- Analyze usage metrics and customer feedback to inform product decisions
+- Conduct competitive analysis and market research
+- Present product strategy to VP-level leadership
+
+WHAT WE ARE LOOKING FOR
+- 6+ years of product management experience, with 3+ years in cloud/infrastructure
+- Technical background (CS degree or equivalent engineering experience)
+- Track record of shipping B2B products at scale
+- Experience with cloud platforms (AWS, GCP, or Azure)
+- Strong analytical skills with data-driven decision making
+- Excellent written and verbal communication
+- MBA preferred but not required
+
+WHAT WE OFFER
+- Annual stock refresh grants
+- Comprehensive medical, dental, vision coverage
+- 25 days PTO + company holidays
+- Parental leave (16 weeks)
+- Tuition reimbursement up to $10,000/year
+- On-site cafeteria and fitness center
+- Relocation assistance available

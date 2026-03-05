@@ -1,0 +1,76 @@
+DEAL MEMO -- FARMVISION
+Analyst: Rachel Torres | Date: 2025-10-05
+Fund: Horizon Ventures Fund III
+
+Company: FarmVision
+Sector: AgTech / Precision Agriculture
+Stage: Seed
+Founded: 2024
+
+FOUNDERS
+  CEO: Jake Sorensen -- 4th generation farmer from Iowa, turned CS degree into ag-tech.
+  Built crop monitoring tools as side projects for 3 years before going full-time.
+  CTO: Anika Sharma -- ex-DJI (drone division), robotics PhD from CMU.
+  Advisor: Dr. Robert Hayes -- head of Iowa State ag extension program.
+
+ASK & TERMS
+  Raising: $4M Seed
+  Pre-money valuation: $16M
+  Structure: priced round
+  Use of funds: fleet buildout (30 drones), AI model training, first 50 farm contracts
+
+TRACTION
+  Very early. 8 paid pilots running across Iowa and Illinois.
+  Revenue: ~$180K annualized from pilots.
+  Pilot results: farmers seeing 12-18% reduction in pesticide costs and 8-15% yield
+  improvement from targeted spraying vs broadcast application.
+  LOIs: 23 farms have signed LOIs for 2026 season ($1.1M total value).
+
+PRODUCT
+  Autonomous drone fleet for crop scouting and precision spraying.
+
+  Scout mode: drones fly predetermined patterns, multispectral cameras capture
+  crop health data. AI identifies disease, pest damage, nutrient deficiency, water stress.
+  Generates per-acre action maps.
+
+  Spray mode: targeted application of pesticides/fertilizer only where needed.
+  Reduces chemical usage by 60-80% vs broadcast spraying.
+
+  Key tech: their own flight controller that handles variable wind conditions for
+  precise spraying (Anika's PhD work). Sub-centimeter accuracy.
+
+MARKET
+  US crop farming: $180B+ market. Precision ag is ~15% penetrated.
+  Average US farm is 445 acres. FarmVision charges $8-12/acre/season.
+  SAM: ~300M acres of applicable cropland in the US alone.
+  Farmers are price-sensitive but ROI-driven -- 12% pesticide savings on a
+  1000-acre corn farm = $18K savings vs ~$10K FarmVision cost. Clear payback.
+
+COMPETITIVE LANDSCAPE
+  DJI Agras -- hardware only, no AI/analytics layer. Farmer has to interpret data.
+  Sentera -- sensor company, no spraying capability.
+  John Deere See & Spray -- tractor-mounted, expensive ($800K+ equipment).
+  FarmVision wins on: end-to-end solution, accessible pricing, no capital equipment purchase.
+
+RISKS
+  - Hardware risk: drones break. Harsh farm conditions (dust, wind, rain). Maintenance
+    costs could eat margins. They estimate 15% annual fleet replacement.
+  - Seasonality: revenue concentrated in April-September. Cash flow management critical.
+  - Regulatory: FAA drone regulations for agricultural spraying are evolving. Currently
+    favorable but could tighten.
+  - Scaling: each region needs a local drone operator base. Labor-intensive scaling.
+  - Jake is passionate but green as a CEO. Needs a strong VP Sales hire.
+
+MY TAKE
+  I really like this team. Jake understands farmers because he IS one, and Anika's
+  technical chops are undeniable. The pilot results are strong -- 12-18% pesticide reduction
+  is money in farmers' pockets, and that's how you sell to farmers.
+
+  But I'm worried about the unit economics at scale. Hardware maintenance, drone operators,
+  seasonal revenue -- this could become a low-margin services business disguised as a tech
+  company. They need to prove the economics at 50+ farms before I'm confident.
+
+  At $16M pre for a seed-stage hardware-intensive business, it's a stretch. I'd want
+  $12M pre or a bigger equity stake.
+
+RECOMMENDATION: PASS -- revisit at Series A if unit economics prove out

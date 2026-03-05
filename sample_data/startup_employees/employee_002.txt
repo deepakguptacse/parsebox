@@ -1,0 +1,23 @@
+EMPLOYEE RECORD
+
+Name: Marcus Johnson
+Employee ID: EMP-1002
+Department: Product
+Title: Product Manager
+Location: New York, NY
+Start Date: 2023-01-09
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $165,000
+  Equity: 10,000 shares (4-year vest, 1-year cliff)
+  Signing Bonus: $15,000
+
+Skills: Product strategy, user research, SQL, A/B testing, Figma
+Education: MBA, Wharton School of Business (2022)
+
+Performance Reviews:
+  2024 H2: Meets expectations -- Shipped 3 features, hit 80% of OKRs
+  2024 H1: Exceeds expectations -- Grew DAU by 22% through onboarding improvements
+
+Manager: Lisa Wang (EMP-0801)

@@ -1,0 +1,30 @@
+Title: Regulatory Frameworks for Decentralized Finance: A Comparative Analysis of G20 Approaches to Cryptocurrency Oversight
+
+Authors:
+  - Prof. David Nakamura, Faculty of Law, University of Tokyo
+  - Dr. Catherine Dupont, European Central Bank, Frankfurt
+  - Dr. Rajesh Patel, Indian Institute of Management, Ahmedabad
+
+Year: 2024
+Journal: Journal of Financial Regulation
+DOI: 10.1093/jfr/fjae0042
+
+Keywords: cryptocurrency regulation, decentralized finance, DeFi, financial regulation, G20, stablecoins, investor protection
+
+Abstract:
+The rapid growth of decentralized finance (DeFi) protocols, with total value locked
+exceeding $180 billion by mid-2024, has prompted divergent regulatory responses across
+major economies. This paper presents a systematic comparative analysis of cryptocurrency
+regulatory frameworks adopted by G20 nations between 2020 and 2024. We construct a
+novel Regulatory Stringency Index (RSI) based on 42 policy dimensions encompassing
+licensing requirements, consumer protection mandates, anti-money laundering (AML)
+obligations, and taxation regimes. Our analysis identifies three distinct regulatory
+archetypes: comprehensive integration (EU MiCA framework), activity-based regulation
+(United States, United Kingdom), and restrictive containment (China, India pre-2024).
+Using panel regression on quarterly data from 15 countries, we find that jurisdictions
+adopting the comprehensive integration approach experienced 34% higher institutional
+investment inflows without statistically significant increases in consumer fraud
+incidents. Conversely, restrictive approaches were associated with increased use of
+unregulated offshore platforms (estimated 47% migration of trading volume). We propose
+a harmonized minimum standards framework compatible with the Financial Stability Board
+recommendations that balances innovation incentives with systemic risk containment.

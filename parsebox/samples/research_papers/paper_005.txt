@@ -1,0 +1,31 @@
+Title: Longitudinal Effects of Social Media Usage Patterns on Adolescent Well-Being: A Five-Year Cohort Study
+
+Authors:
+  - Dr. Emma Richardson, Department of Psychology, University of Oxford
+  - Dr. Carlos Mendez, Department of Psychiatry, Columbia University
+  - Dr. Yuki Sato, Graduate School of Education, Kyoto University
+
+Year: 2025
+Journal: Psychological Science
+DOI: 10.1177/09567976251234567
+
+Keywords: social media, adolescent mental health, well-being, longitudinal study, screen time, social comparison, self-esteem
+
+Abstract:
+Cross-sectional studies linking social media use to adolescent mental health have yielded
+inconsistent findings, partly due to the inability to establish temporal precedence. We
+address this limitation through a five-year longitudinal cohort study tracking 4,832
+adolescents aged 12-17 across 28 secondary schools in the United Kingdom and United States.
+Participants completed validated psychometric assessments (PHQ-A, GAD-7, Rosenberg
+Self-Esteem Scale) every six months while their social media usage patterns were measured
+via a custom smartphone monitoring application with informed consent. Our multilevel
+growth curve models reveal that passive consumption (scrolling without interaction)
+exceeding 2 hours daily predicted significant declines in self-esteem (beta = -0.18,
+p < 0.001) and increases in depressive symptoms (beta = 0.22, p < 0.001) over subsequent
+12-month periods. Crucially, active social media use (posting, commenting, direct
+messaging) showed no such association and was weakly protective for social connectedness
+(beta = 0.09, p = 0.03). The negative effects of passive consumption were moderated by
+pre-existing self-esteem levels, with adolescents in the lowest self-esteem quartile
+showing effects three times larger than those in the highest quartile. These findings
+suggest that intervention programs should focus on the mode of engagement rather than
+total screen time, challenging the prevailing policy emphasis on usage duration limits.

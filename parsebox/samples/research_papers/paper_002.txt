@@ -1,0 +1,26 @@
+Title: Decadal Trends in Subsurface Ocean Temperature Anomalies Across the North Atlantic Basin
+
+Authors:
+  - Dr. Elena Vasquez, Instituto de Ciencias del Mar, Barcelona, Spain
+  - Dr. James Thornton, National Oceanography Centre, Southampton, UK
+  - Dr. Aiko Tanaka, Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
+
+Year: 2024
+Journal: Nature Climate Change
+DOI: 10.1038/s41558-024-02198-7
+
+Keywords: ocean warming, subsurface temperature, North Atlantic, climate variability, Argo floats, thermohaline circulation
+
+Abstract:
+Using a comprehensive dataset of over 2.3 million Argo float profiles collected between
+2004 and 2023, we characterize subsurface ocean temperature trends at depths of 200 to
+2000 meters across the North Atlantic basin. Our analysis reveals statistically significant
+warming of 0.12 +/- 0.03 degrees Celsius per decade at intermediate depths (700-1500m),
+substantially exceeding previous estimates derived from shipboard hydrographic surveys.
+The warming signal is most pronounced in the subpolar North Atlantic, where it coincides
+with a measurable weakening of the Atlantic Meridional Overturning Circulation (AMOC) by
+approximately 1.8 Sv over the study period. We employ a coupled ocean-atmosphere model to
+attribute these changes, finding that 68% of the observed warming is attributable to
+anthropogenic forcing, with the remainder linked to natural multidecadal variability.
+These findings have significant implications for sea-level rise projections and the
+stability of deep-water formation processes in the Nordic Seas.

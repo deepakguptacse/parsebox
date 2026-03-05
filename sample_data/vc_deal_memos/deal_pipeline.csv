@@ -1,0 +1,12 @@
+company,sector,stage,ask_millions,valuation_millions,arr_millions,analyst,recommendation,our_allocation_millions
+NovaStream AI,Computer Vision,Series A,12,48,1.8,Rachel Torres,Invest,6
+GreenLoop,CleanTech,Seed,3.5,14,0,James Nakamura,Invest,1.5
+MediQ Health,Healthcare AI,Series B,40,280,9.2,Rachel Torres,Invest,12
+PaySync,Fintech,Series A,15,60,3.6,James Nakamura,Invest,7
+FarmVision,AgTech,Seed,4,16,0.18,Rachel Torres,Pass,0
+CodeWeave,Developer Tools,Series A,18,90,4.1,James Nakamura,Invest,6
+UrbanPulse,Smart City / IoT,Series B,35,175,11.5,Rachel Torres,Invest,8
+Petajoule Energy,Clean Energy,Series A,25,100,0,James Nakamura,Invest,5
+LeapFrog Education,EdTech,Seed,2.5,10,0,Rachel Torres,Pass,0
+VaultChain,Supply Chain,Series A,10,40,2.2,James Nakamura,Invest,3
+NightOwl Security,Cybersecurity,Series A,20,80,5.8,James Nakamura,Invest,6

@@ -1,0 +1,25 @@
+Title: Efficient Sparse Attention Mechanisms for Long-Context Transformer Architectures
+
+Authors:
+  - Wei Chen, Department of Computer Science, Stanford University
+  - Priya Sharma, Google DeepMind, London
+  - Marcus Okonkwo, MIT Computer Science and Artificial Intelligence Laboratory
+
+Year: 2025
+Journal: Transactions on Machine Learning Research
+DOI: 10.1234/tmlr.2025.00142
+
+Keywords: transformers, sparse attention, long-context modeling, efficient inference, large language models
+
+Abstract:
+Standard self-attention in transformer architectures scales quadratically with sequence
+length, limiting their applicability to long-context tasks such as document understanding
+and multi-turn dialogue. We propose Strided Sparse Attention (SSA), a novel attention
+pattern that combines local windowed attention with learnable global token selection.
+SSA reduces the computational complexity from O(n^2) to O(n * sqrt(n)) while retaining
+97.3% of the performance of full attention on standard benchmarks. We evaluate SSA on
+five long-context benchmarks spanning document QA, summarization, and code understanding,
+demonstrating consistent improvements in throughput (2.4x faster inference) with minimal
+accuracy degradation. Our method is architecture-agnostic and can be retrofitted into
+existing transformer models with fewer than 50 lines of code change. We release our
+implementation and benchmark suite to facilitate reproducibility.

@@ -1,0 +1,9 @@
+employee_id,name,department,title,location,start_date,base_salary,equity_shares
+EMP-1001,Sarah Chen,Engineering,Senior Software Engineer,"San Francisco, CA",2022-03-14,185000,15000
+EMP-1002,Marcus Johnson,Product,Product Manager,"New York, NY",2023-01-09,165000,10000
+EMP-1003,Priya Patel,Engineering,Staff Engineer,"San Francisco, CA",2021-08-02,220000,25000
+EMP-1004,James O'Brien,Sales,Account Executive,"Chicago, IL",2023-06-15,95000,5000
+EMP-1005,Aisha Mohammed,Design,Senior UX Designer,"Austin, TX",2022-11-01,155000,12000
+EMP-1006,Carlos Rivera,Engineering,DevOps Engineer,"Denver, CO",2023-04-10,170000,12000
+EMP-1007,Emily Zhang,Engineering,Junior Software Engineer,"San Francisco, CA",2024-07-01,140000,8000
+EMP-1008,Tom Nakamura,Finance,Financial Analyst,"New York, NY",2023-09-18,120000,6000

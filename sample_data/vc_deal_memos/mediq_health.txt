@@ -1,0 +1,69 @@
+DEAL MEMO -- MEDIQ HEALTH
+Analyst: Rachel Torres | Date: 2025-12-03
+Fund: Horizon Ventures Fund III
+
+Company: MediQ Health
+Sector: Healthcare AI / Diagnostics
+Stage: Series B
+Founded: 2021
+
+FOUNDERS
+  CEO: Dr. Yuki Tanaka -- radiologist, former Stanford Medical faculty. Built the first
+  AI-assisted mammography tool at Stanford Health. Forbes 30 Under 30 (healthcare, 2022).
+  CTO: Omar Farouk -- ex-DeepMind, worked on AlphaFold. PhD in computational biology, Oxford.
+  CMO: Dr. Sarah Brighton -- 15 years pharma (Pfizer, Roche). Understands hospital procurement.
+
+ASK & TERMS
+  Raising: $40M Series B
+  Pre-money valuation: $280M
+  Lead: Andreessen Horowitz (committed $25M, we'd fill remaining)
+  Use of funds: FDA 510(k) submissions (3 products), EU MDR certification, sales expansion
+
+TRACTION
+  ARR: $9.2M (2.8x YoY growth)
+  Customers: 47 hospitals and imaging centers across 12 states
+  Key logos: Mayo Clinic, Cleveland Clinic, UCSF Health, Mount Sinai
+  Gross margin: 82%
+  NDR: 128%
+  Clinical validation: 3 peer-reviewed studies showing 23% improvement in early detection rates
+
+PRODUCT
+  AI diagnostic platform for medical imaging. Three modules:
+  1. MediQ Radiology -- CT/MRI analysis for oncology (FDA cleared, their first product)
+  2. MediQ Cardio -- cardiac imaging analysis (FDA submission Q1 2026)
+  3. MediQ Pathology -- digital pathology for tissue analysis (beta, 8 hospital pilots)
+
+  Integration: works with Epic, Cerner, and all major PACS systems.
+  Radiologists love it -- reduces read time by 35% and flags findings they might miss.
+
+UNIT ECONOMICS
+  ACV: $195K (up from $140K last year -- upsell working)
+  CAC: $62K
+  Payback period: 4 months
+  LTV/CAC: 11.2x
+
+COMPETITIVE LANDSCAPE
+  Viz.ai -- strong in stroke detection, narrow focus. Acquired by Olympus ($700M rumored).
+  Aidoc -- similar breadth but weaker clinical validation. ~$5M ARR.
+  RadNet / DeepHealth -- focused on mammography only.
+  MediQ wins on: multi-modality platform, clinical evidence depth, Epic integration.
+
+RISKS
+  - Regulatory: FDA timelines are unpredictable. Cardio module approval could slip.
+  - Sales cycle: hospital procurement is 6-12 months. Working capital intensive.
+  - Valuation: $280M pre on $9.2M ARR = 30x revenue. Rich but not unreasonable for
+    healthcare AI with this growth rate and margin profile.
+  - Competition from big tech: Google Health, Microsoft Nuance -- but hospitals trust
+    focused medical AI companies more than big tech (for now).
+
+MY TAKE
+  MediQ is the real deal. The clinical validation is what sets them apart -- 3 peer-reviewed
+  studies at tier-1 hospitals is a moat that takes years to replicate. Yuki and Omar are a
+  dream founding team: deep clinical credibility plus world-class ML. The unit economics are
+  best-in-class for healthtech.
+
+  The a]16 partnership is a strong signal. My concern is purely valuation -- we're paying up.
+  But in healthcare AI, the winners take most of the market because of the regulatory moats,
+  and MediQ is positioned to be a winner.
+
+RECOMMENDATION: INVEST -- $12M allocation (filling a]16 round)

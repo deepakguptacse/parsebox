@@ -1,0 +1,82 @@
+DEAL MEMO -- VAULTCHAIN
+Analyst: James Nakamura | Date: 2025-10-15
+Fund: Horizon Ventures Fund III
+
+Company: VaultChain
+Sector: Supply Chain / Blockchain
+Stage: Series A
+Founded: 2022
+
+FOUNDERS
+  CEO: Henrik Larsen -- ex-Maersk Digital (VP Product). 15 years in shipping/logistics.
+  CTO: Priya Sundaram -- ex-Consensys, built enterprise Ethereum solutions.
+  Head of BD: Tom Mitchell -- ex-Flexport, ran their Asia partnerships.
+
+ASK & TERMS
+  Raising: $10M Series A
+  Pre-money valuation: $40M
+  Lead investor: Maersk Growth (corporate VC, committed $4M -- strategic investment)
+  Use of funds: pharma vertical expansion, API platform, EU compliance (CSRD)
+
+TRACTION
+  ARR: $2.2M (3.1x YoY growth)
+  Customers: 18 (mix of manufacturers, logistics providers, retailers)
+  Key logos: Unilever (pilot), Maersk (customer + investor), H&M, Tesco
+  Transactions tracked: 4.2M shipments on platform
+  API calls: 12M/month
+
+PRODUCT
+  Blockchain-based supply chain transparency platform. Tracks goods from raw material
+  to retail shelf with tamper-proof provenance records.
+
+  Current verticals:
+  1. Fashion -- tracks cotton from farm to garment. Proves sustainability claims.
+     (H&M uses this for their "Conscious" line.)
+  2. Food -- farm-to-fork traceability. Tracks temperature, handling, certifications.
+     (Tesco pilot for fresh seafood supply chain.)
+  3. Pharma (new) -- drug provenance for counterfeit prevention. Regulatory tailwind
+     from FDA DSCSA mandate (November 2024).
+
+  Tech: private Ethereum L2 (low gas fees), IPFS for document storage, IoT integrations
+  for real-time tracking. Mobile app for factory floor workers to scan and verify.
+
+  New product: "VaultChain Comply" -- automated ESG reporting for EU Corporate
+  Sustainability Reporting Directive (CSRD). Pulls data directly from supply chain
+  records. This could be huge -- every EU company with $50M+ revenue needs this by 2026.
+
+COMPETITIVE LANDSCAPE
+  IBM Food Trust -- shut down (Jan 2024). Blockchain hype didn't match execution.
+  Everledger -- diamond provenance, narrow niche.
+  Circulor -- battery supply chain focus, backed by mining companies.
+  TradeLens (IBM + Maersk) -- shut down (Nov 2022). Henrik was there when it failed
+  and understands exactly why: too complex, not enough value for participants.
+
+  "The graveyard of blockchain supply chain companies is large. VaultChain's advantage
+  is that Henrik lived through the failures and built something simpler." -- my notes
+
+RISKS
+  - Blockchain stigma: after IBM Food Trust and TradeLens shut down, enterprise buyers
+    are skeptical. VaultChain downplays "blockchain" in marketing (smart).
+  - Network effects: platform value increases with more participants, but getting the
+    first participants is a chicken-and-egg problem. Maersk partnership helps.
+  - Pharma is a new vertical with a 12-month sales cycle minimum.
+  - $40M pre on $2.2M ARR = 18x. A bit rich given the enterprise sales complexity.
+  - Regulatory dependency: CSRD compliance product is brilliant but EU could delay
+    enforcement (they've already delayed once).
+
+MY TAKE
+  I was skeptical going in -- blockchain supply chain has a terrible track record.
+  But Henrik won me over. He's the rare founder who failed at this before (TradeLens)
+  and learned the right lessons: simplify, start narrow, prove ROI before expanding.
+
+  The Maersk Growth investment as lead is a very strong signal. They know this space
+  better than any VC, and they're betting on VaultChain after shutting down their
+  own product. That's unusual and meaningful.
+
+  The CSRD compliance angle could 3x their TAM overnight if the module ships well.
+  Every European CPG company is scrambling for supply chain reporting tools.
+
+  But I worry about the sales cycle and the "blockchain" baggage. This is a 3-5 year
+  bet minimum, and the path to $50M ARR is long and uncertain.
+
+RECOMMENDATION: INVEST -- $3M alongside Maersk Growth. Small position given the risk.

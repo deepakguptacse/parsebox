@@ -1,0 +1,33 @@
+Global Services GmbH
+Friedrichstrasse 45
+10117 Berlin, Germany
+
+RECHNUNG / INVOICE
+
+Rechnungsnummer: GS-2025-1187
+Datum: 03.02.2025
+Faelligkeitsdatum: 03.02.2025
+Zahlungsbedingungen: Sofortige Zahlung / Immediate Payment
+
+Kunde / Customer:
+  Eurotech Solutions Ltd
+  14 Rue de Rivoli
+  75001 Paris, France
+
+Positionen / Line Items:
+
+  1. IT Consulting Services (Jan 2025)
+     40 hours x EUR 150.00/hr .................. EUR 6,000.00
+
+  2. Cloud Infrastructure Setup
+     1 project x EUR 3,500.00 .................. EUR 3,500.00
+
+                              Zwischensumme / Subtotal:  EUR  9,500.00
+                              MwSt / VAT (19%):          EUR  1,805.00
+                              Gesamtbetrag / Total:      EUR 11,305.00
+
+Waehrung / Currency: EUR
+
+Bankverbindung / Banking Details:
+  IBAN: DE89 3704 0044 0532 0130 00
+  BIC: COBADEFFXXX

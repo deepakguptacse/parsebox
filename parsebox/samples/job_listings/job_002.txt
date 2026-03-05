@@ -1,0 +1,40 @@
+===================================
+Data Scientist - Risk Analytics
+===================================
+
+Company: Meridian Capital Partners
+Industry: Financial Services / Investment Banking
+Location: New York, NY (On-site)
+Employment Type: Full-time
+Compensation: $155,000 - $195,000 base + 15-25% annual bonus
+
+Overview:
+Meridian Capital Partners is a leading mid-market investment bank seeking a Data Scientist
+to join our Risk Analytics group. You will develop quantitative models to assess portfolio
+risk, detect anomalies in trading patterns, and build predictive systems for credit risk
+evaluation.
+
+Responsibilities:
+- Build and deploy machine learning models for credit risk scoring
+- Develop real-time anomaly detection systems for trading surveillance
+- Create statistical models for portfolio stress testing
+- Collaborate with traders and risk managers to translate business needs into analytical solutions
+- Present findings to senior leadership and regulatory stakeholders
+
+Requirements:
+- Master's degree or PhD in Statistics, Mathematics, Physics, or related quantitative field
+- 3+ years of experience in data science, preferably in financial services
+- Expert-level Python and SQL skills
+- Experience with time-series analysis and forecasting methods
+- Proficiency with scikit-learn, XGBoost, and PyTorch or TensorFlow
+- Knowledge of financial instruments (derivatives, fixed income, equities)
+- Experience with regulatory frameworks (Basel III, Dodd-Frank) is a plus
+- Strong statistical foundation (hypothesis testing, Bayesian methods)
+
+Benefits:
+- Performance bonus (15-25% of base salary)
+- Health and dental insurance
+- 20 days PTO + 10 holidays
+- Gym membership reimbursement
+- Commuter benefits
+- Annual offsite retreat

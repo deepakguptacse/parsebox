@@ -1,0 +1,33 @@
+Creative Agency
+Bright Ideas Studio
+22 Soho Square, London W1D 4NS
+
+INVOICE
+
+To: Northwind Traders
+    100 King Street
+    Manchester M2 4WQ
+
+Invoice No:   CA/2025/003
+Date:         15 Jan 2025
+Due:          15 Feb 2025
+
+Description of Services:
+
+  Brand Identity Redesign Project
+  Complete brand overhaul including logo design, brand guidelines,
+  typography selection, colour palette, and brand collateral templates.
+  Project duration: 8 weeks (Nov 2024 - Jan 2025).
+
+  Project Fee ........................................... GBP 12,500.00
+
+                                    Subtotal:     GBP 12,500.00
+                                    VAT (20%):    GBP  2,500.00
+                                    Total Due:    GBP 15,000.00
+
+Currency: GBP
+
+Payment by BACS transfer:
+  Sort Code: 20-45-67
+  Account: 41234567
+  Reference: CA/2025/003

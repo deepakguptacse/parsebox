@@ -1,0 +1,69 @@
+DEAL MEMO -- PAYSYNC
+Analyst: James Nakamura | Date: 2025-09-18
+Fund: Horizon Ventures Fund III
+
+Company: PaySync
+Sector: Fintech / Cross-Border Payments
+Stage: Series A
+Founded: 2022
+
+FOUNDERS
+  CEO: David Okonkwo -- ex-Stripe (5 yrs, led Africa expansion). Before that, built
+  mobile money platform in Lagos that processed $50M+ annually.
+  CTO: Min-Ji Park -- ex-Square, architected their real-time settlement engine.
+  Head of Compliance: Elena Vasquez -- 10 yrs at JPMorgan, AML/KYC specialist.
+
+  NOTE: Unusually strong team for Series A. Having a dedicated compliance lead this
+  early signals maturity -- fintech startups usually bolt this on later and regret it.
+
+ASK & TERMS
+  Raising: $15M Series A
+  Pre-money valuation: $60M
+  Lead investor: us (seeking)
+  Use of funds: licenses in 8 new markets, engineering team (20 -> 45), compliance infra
+
+TRACTION
+  TPV (total payment volume): $180M/quarter (up from $12M/quarter 18 months ago)
+  Revenue: $3.6M ARR (take rate: ~0.8%)
+  Customers: 340 SMBs using the platform
+  Corridors: US<->Nigeria, US<->India, UK<->Philippines, US<->Mexico
+  Transaction success rate: 98.7% (industry avg: ~92%)
+
+PRODUCT
+  API-first cross-border payment platform for SMBs and marketplaces.
+  Handles: currency conversion, compliance screening, local payment rail routing.
+
+  What makes it different:
+  - Intelligent routing: picks the cheapest/fastest rail for each transaction
+  - Built-in compliance: AML screening, sanctions checks, automated SAR filing
+  - Settlement speed: 80% of transactions settle same-day (vs 3-5 days industry norm)
+  - Pricing: 0.5-1.2% per transaction (vs 3-7% for incumbents like Western Union)
+
+COMPETITIVE LANDSCAPE
+  Wise (public) -- dominant but focused on consumers, SMB product is an afterthought.
+  Payoneer (public) -- marketplace focused, clunky API, high pricing.
+  Nium -- strong API but enterprise-only, not accessible to SMBs.
+  Thunes -- infrastructure layer, not customer-facing.
+  PaySync's edge: best-in-class API experience at SMB-friendly pricing.
+
+RISKS
+  - Regulatory: money transmission licenses are expensive and slow. Missing a market
+    means missing revenue. They have 6 licenses now, need 14 by end of 2026.
+  - Fraud: cross-border payments attract fraud. Their loss rate is 0.03% (very good)
+    but one major fraud event could be existential at this scale.
+  - Competition: Wise could wake up and build a real SMB product overnight.
+  - FX risk: they hold float in multiple currencies. Hedging costs eat ~12bps of margin.
+
+MY TAKE
+  PaySync is attacking a $150T market with a genuinely better product. The 98.7% success
+  rate and same-day settlement are technical achievements that matter to customers (failed
+  transactions in cross-border payments are a HUGE pain point).
+
+  David's Africa experience is invaluable -- emerging market corridors are where the
+  growth is, and most fintech founders don't understand them. The compliance-first approach
+  is the right call even though it slows them down short-term.
+
+  At $60M pre on $3.6M ARR, it's a 17x multiple -- reasonable for the growth trajectory.
+  If they hit $15M ARR by Series B, this could 5-8x for us.
+
+RECOMMENDATION: INVEST -- $7M allocation as lead

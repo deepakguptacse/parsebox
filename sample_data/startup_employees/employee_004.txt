@@ -1,0 +1,23 @@
+EMPLOYEE RECORD
+
+Name: James O'Brien
+Employee ID: EMP-1004
+Department: Sales
+Title: Account Executive
+Location: Chicago, IL
+Start Date: 2023-06-15
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $95,000
+  Equity: 5,000 shares (4-year vest, 1-year cliff)
+  Commission: On-target earnings $80,000
+
+Skills: Enterprise sales, Salesforce, cold outreach, contract negotiation
+Education: B.A. Business Administration, University of Michigan (2018)
+
+Performance Reviews:
+  2024 H2: Exceeds expectations -- Closed $1.2M in new ARR (120% of quota)
+  2024 H1: Meets expectations -- Closed $450K in new ARR (90% of quota)
+
+Manager: Rachel Torres (EMP-0755)

@@ -1,0 +1,81 @@
+DEAL MEMO -- CODEWEAVE
+Analyst: James Nakamura | Date: 2025-11-22
+Fund: Horizon Ventures Fund III
+
+Company: CodeWeave
+Sector: Developer Tools / AI
+Stage: Series A
+Founded: 2023
+
+FOUNDERS
+  CEO: Tomas Eriksson -- ex-GitHub (VP Engineering), before that early engineer at Spotify.
+  CTO: Grace Liu -- ex-Anthropic research team, focused on code generation models.
+  (Grace is extraordinary. Possibly the strongest technical founder I've met this year.
+   She left Anthropic because she wanted to build product, not just publish papers.)
+
+ASK & TERMS
+  Raising: $18M Series A
+  Pre-money valuation: $90M
+  Lead: Index Ventures (committed $10M, we'd fill)
+  Use of funds: model training compute, enterprise sales team, SOC2/compliance
+
+TRACTION
+  ARR: $4.1M (was $0 fourteen months ago)
+  Growth: 35% MoM for the last 6 months
+  Users: 12,000 individual developers (freemium), 86 paying teams
+  Enterprise pipeline: $8M in active conversations (Microsoft, Stripe, Datadog)
+  NPS: 78 (insanely high for a dev tool)
+
+PRODUCT
+  AI-powered code review and refactoring platform. NOT another copilot/autocomplete.
+
+  What it does:
+  1. Reviews pull requests with context-aware analysis (understands the full codebase,
+     not just the diff). Catches bugs, security issues, performance problems.
+  2. Suggests refactoring opportunities with one-click apply.
+  3. Enforces team coding standards automatically (learns from existing code patterns).
+  4. "Code Health Score" -- tracks technical debt over time across the codebase.
+
+  The magic: they fine-tuned their own 13B parameter model specifically for code review.
+  It outperforms GPT-4 on their internal benchmark for catching real bugs (72% vs 54%
+  detection rate on a suite of 500 known-buggy PRs).
+
+  Integration: GitHub, GitLab, Bitbucket. Works with any language but strongest in
+  Python, TypeScript, Go, Rust, and Java.
+
+UNIT ECONOMICS
+  ACV: $48K (team plan)
+  Enterprise ACV: $120K+ (early signals from pipeline)
+  Gross margin: 61% (heavy on compute -- model inference is expensive)
+  CAC: $8K (mostly PLG -- developers try it free, then bring it to their team)
+  Payback: 2 months
+
+COMPETITIVE LANDSCAPE
+  GitHub Copilot -- autocomplete, not code review. Different value prop.
+  Sourcery -- Python only, rule-based, not AI-native.
+  Codacy/SonarQube -- static analysis, pattern matching. CodeWeave is semantic.
+  Amazon CodeGuru -- limited language support, mixed reviews.
+  Biggest risk: GitHub/Microsoft builds this into Copilot. But review is hard -- it
+  requires understanding intent, not just syntax.
+
+RISKS
+  - Margin: 61% gross margin is below typical SaaS. GPU costs need to come down or
+    they need model efficiency gains. Grace says she can get to 70%+ with distillation.
+  - Platform risk: GitHub could build this. But they haven't, and CodeWeave has a
+    14-month head start with a purpose-built model.
+  - $90M pre on $4.1M ARR = 22x. Premium but not crazy for this growth rate.
+  - Team is only 18 people. Need to scale to 50+ fast without breaking culture.
+
+MY TAKE
+  CodeWeave is the most exciting dev tools company I've seen since Vercel. The PLG
+  motion is working beautifully -- 78 NPS means developers genuinely love it, and
+  that's the hardest thing to achieve in dev tools. Grace's model is a real
+  technical moat.
+
+  The gross margin concern is real but solvable. Inference costs are dropping and
+  Grace's distillation roadmap is credible. The enterprise pipeline at $8M with
+  Microsoft and Stripe in it tells me this product has legs beyond individual devs.
+
+  Index leading is a strong signal. They don't miss often in dev tools.
+
+RECOMMENDATION: INVEST -- $6M allocation to fill Index round

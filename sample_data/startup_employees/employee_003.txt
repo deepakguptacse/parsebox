@@ -1,0 +1,25 @@
+EMPLOYEE RECORD
+
+Name: Priya Patel
+Employee ID: EMP-1003
+Department: Engineering
+Title: Staff Engineer
+Location: San Francisco, CA (Remote)
+Start Date: 2021-08-02
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $220,000
+  Equity: 25,000 shares (4-year vest, 1-year cliff)
+  Signing Bonus: $30,000
+
+Skills: Machine learning, Python, PyTorch, data pipelines, Spark
+Education: Ph.D. Computer Science, UC Berkeley (2021)
+
+Performance Reviews:
+  2024 H2: Exceeds expectations -- Built real-time fraud detection model (saved $2.3M)
+  2024 H1: Exceeds expectations -- Reduced ML inference latency by 40%
+  2023 H2: Meets expectations -- Established ML team coding standards
+  2023 H1: Exceeds expectations -- Launched recommendation engine v2
+
+Manager: David Park (EMP-0892)

@@ -1,0 +1,88 @@
+DEAL MEMO -- NIGHTOWL SECURITY
+Analyst: James Nakamura | Date: 2025-12-01
+Fund: Horizon Ventures Fund III
+
+Company: NightOwl Security
+Sector: Cybersecurity / AI
+Stage: Series A
+Founded: 2023
+
+FOUNDERS
+  CEO: Zara Hussain -- ex-NSA (7 years, Tailored Access Operations). Then CISO at
+  Cloudflare for 2 years. Knows both offense and defense deeply.
+  CTO: Alexei Petrov -- ex-CrowdStrike (principal engineer, Falcon platform).
+  Built their real-time threat detection pipeline that processes 1T+ events/day.
+
+ASK & TERMS
+  Raising: $20M Series A
+  Pre-money valuation: $80M
+  Lead: Sequoia (committed $12M)
+  Use of funds: SOC analyst hiring (triple the team), model training, FedRAMP cert
+
+TRACTION
+  ARR: $5.8M (started selling 9 months ago)
+  Growth: 52% QoQ (this is not a typo -- verified)
+  Customers: 34 mid-market companies (200-5000 employees)
+  Key logos: Notion, Figma, Plaid, Airtable
+  MTTR (mean time to respond): 4 minutes with NightOwl vs. industry avg 287 minutes
+  False positive rate: 3.2% (industry avg: 45%+ for SIEM tools)
+
+PRODUCT
+  AI-native security operations center (SOC) platform. Replaces the traditional
+  SIEM + SOAR + analyst stack with an AI system that triages, investigates, and
+  responds to security alerts autonomously.
+
+  How it works:
+  1. Ingests logs from all sources (cloud, endpoint, network, identity, email)
+  2. AI correlates events across sources to identify real threats (not just noisy alerts)
+  3. Autonomously investigates: checks reputation databases, analyzes payloads,
+     traces lateral movement, builds attack timelines
+  4. Takes automated containment actions (isolate host, revoke token, block IP)
+     with human approval for high-severity actions
+  5. Generates incident reports that are actually readable
+
+  The killer metric: their AI handles 94% of alerts end-to-end without human intervention.
+  That's the equivalent of 15-20 SOC analysts for a mid-market company.
+
+  Result: customers get enterprise-grade security for $15-25K/month instead of
+  building a $2M+/year SOC team.
+
+UNIT ECONOMICS
+  ACV: $204K
+  Gross margin: 74%
+  CAC: $45K
+  Payback: 2.6 months
+  NPS: 82 (customers LOVE not getting paged at 3am)
+
+COMPETITIVE LANDSCAPE
+  CrowdStrike -- endpoint focused, adding more but not AI-native SOC.
+  Palo Alto XSIAM -- their response to AI SOC. Big company, slow to innovate.
+  SentinelOne -- strong endpoint, weak on correlation across sources.
+  Torq / Tines -- SOAR automation, but rule-based not AI-native.
+  Anvilogic -- similar AI approach but earlier and less proven.
+
+RISKS
+  - Autonomous security actions are terrifying if the AI gets it wrong. One false
+    positive that takes down production = customer gone. Their approval flow for
+    high-severity actions mitigates this but doesn't eliminate it.
+  - Sequoia deal: they're leading at $80M pre on $5.8M ARR = 14x. Actually
+    reasonable for this growth rate and category.
+  - Zara's NSA background is a double-edged sword: opens government doors, but some
+    commercial customers are uncomfortable.
+  - Talent: AI + security is the hardest intersection to hire for right now.
+
+MY TAKE
+  NightOwl might be the best company in this batch. The metrics are extraordinary:
+  52% QoQ growth, 3.2% false positive rate, 4-minute MTTR. These aren't incremental
+  improvements -- they represent a step function change in how security operations work.
+
+  Zara and Alexei have exactly the right backgrounds. The Notion/Figma/Plaid customer
+  logos mean the product is proven with sophisticated tech buyers who have high bars.
+
+  Security is a market where fear drives purchasing. Every CISO is worried about being
+  the next headline. NightOwl's pitch is simple: "enterprise security without the
+  enterprise headcount." That sells itself.
+
+  Sequoia leading tells you everything. They see a generational company here.
+
+RECOMMENDATION: INVEST -- $6M to fill Sequoia round. Priority allocation.

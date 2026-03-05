@@ -1,0 +1,24 @@
+EMPLOYEE RECORD
+
+Name: Sarah Chen
+Employee ID: EMP-1001
+Department: Engineering
+Title: Senior Software Engineer
+Location: San Francisco, CA
+Start Date: 2022-03-14
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $185,000
+  Equity: 15,000 shares (4-year vest, 1-year cliff)
+  Signing Bonus: $20,000
+
+Skills: Python, Go, Kubernetes, distributed systems, AWS
+Education: M.S. Computer Science, Stanford University (2019)
+
+Performance Reviews:
+  2024 H2: Exceeds expectations -- Led migration of payment service to microservices
+  2024 H1: Meets expectations -- Delivered auth redesign on schedule
+  2023 H2: Exceeds expectations -- Mentored 3 junior engineers
+
+Manager: David Park (EMP-0892)

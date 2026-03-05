@@ -1,0 +1,84 @@
+DEAL MEMO -- URBANPULSE
+Analyst: Rachel Torres | Date: 2025-12-11
+Fund: Horizon Ventures Fund III
+
+Company: UrbanPulse
+Sector: Smart City / IoT
+Stage: Series B
+Founded: 2020
+
+FOUNDERS
+  CEO: Carlos Reyes -- urban planner turned tech founder. Led smart city initiatives
+  at Sidewalk Labs (Google) for 3 years. Deep city government relationships.
+  CTO: Hyun-Soo Kim -- distributed systems expert, ex-AWS IoT Core team lead.
+  VP Sales: Maria Gonzalez -- 12 years selling enterprise software to government.
+
+ASK & TERMS
+  Raising: $35M Series B
+  Pre-money valuation: $175M
+  Lead: General Catalyst (committed $20M, seeking co-investors)
+  Use of funds: expand to 15 new cities, build analytics platform v3, hire 40 people
+
+TRACTION
+  ARR: $11.5M (2.1x YoY growth)
+  Customers: 22 city governments, 3 state DOTs, 5 commercial real estate portfolios
+  Key logos: City of Austin, City of Denver, Miami-Dade County, CBRE, Brookfield
+  Gross margin: 72%
+  NDR: 135% (cities keep buying more modules)
+  Contract length: average 3.2 years (government loves multi-year)
+
+PRODUCT
+  IoT-powered urban analytics platform. Deploys sensors across a city and provides
+  a real-time dashboard for traffic, air quality, noise, pedestrian flow, and parking.
+
+  Modules:
+  1. Traffic Intelligence -- real-time traffic flow optimization. Reduces congestion
+     by 18-22% in deployed corridors (published case study with Austin).
+  2. Environmental Monitoring -- air quality, noise levels, heat mapping.
+  3. Pedestrian Analytics -- foot traffic for urban planning and retail.
+  4. Smart Parking -- occupancy detection, dynamic pricing recommendations.
+  5. Emergency Response -- real-time situational awareness for first responders (new).
+
+  Hardware: proprietary multi-sensor nodes ($400 unit cost, deployed on streetlights).
+  Each node has: camera, LIDAR, air quality sensor, microphone, temp/humidity.
+  Software: cloud analytics platform with dashboards, alerts, and API access.
+
+UNIT ECONOMICS
+  ACV: $520K (city government)
+  Commercial ACV: $180K
+  Hardware margin: 55% (after installation)
+  Software margin: 88%
+  Blended gross: 72%
+  Sales cycle: 6-14 months for government (long but predictable)
+
+COMPETITIVE LANDSCAPE
+  Cisco Kinetic (Smart Cities) -- expensive, requires full Cisco stack. Lock-in concerns.
+  Sidewalk Labs -- dead (shut down in 2020, ironically where Carlos worked).
+  Replica (Google) -- data analytics only, no sensor deployment. Different layer.
+  ShotSpotter (now SoundThinking) -- audio-only, gunshot detection niche.
+  UrbanPulse wins on: integrated multi-sensor platform, city-friendly pricing, proven ROI.
+
+RISKS
+  - Government sales: budget cycles, procurement rules, political risk. A new mayor can
+    kill a project. Multi-year contracts mitigate this but don't eliminate it.
+  - Hardware: manufacturing at scale is hard. They've had two supply chain delays already.
+    Moving to a second manufacturer in Vietnam (Foxconn subsidiary) to de-risk.
+  - Privacy: cameras + LIDAR in public spaces is sensitive. They process everything on-edge
+    and only send aggregate data to cloud. But public perception is a risk.
+  - Valuation: $175M pre on $11.5M ARR = 15x. Fair for govtech with this retention.
+
+MY TAKE
+  UrbanPulse is a classic "boring but big" opportunity. Government tech isn't sexy, but
+  $11.5M ARR with 135% NDR and 3+ year contracts is an incredibly stable business. The
+  cities that deploy UrbanPulse become deeply dependent on it for daily operations.
+
+  Carlos is the perfect founder for this -- he speaks city government fluently and has
+  the relationships to open doors. The Austin case study with 18-22% congestion reduction
+  is a powerful proof point that sells itself.
+
+  The emergency response module could be a game-changer. If they can become the real-time
+  awareness layer for 911 dispatch, the TAM expands dramatically.
+
+  General Catalyst leading is a good sign. $175M valuation is fair, not cheap.
+
+RECOMMENDATION: INVEST -- $8M co-investment alongside General Catalyst

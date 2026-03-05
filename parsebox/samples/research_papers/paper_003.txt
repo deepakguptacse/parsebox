@@ -1,0 +1,28 @@
+Title: In Vivo Efficacy of CRISPR-Cas9 Base Editing for Sickle Cell Disease in a Murine Model
+
+Authors:
+  - Dr. Sarah Mitchell, Department of Genetics, Harvard Medical School
+  - Dr. Kwame Asante, Broad Institute of MIT and Harvard
+  - Dr. Li Wei, Beijing Institute of Genomics, Chinese Academy of Sciences
+  - Dr. Fatima Al-Rashidi, King Abdullah University of Science and Technology
+
+Year: 2025
+Journal: The New England Journal of Medicine
+DOI: 10.1056/NEJMoa2502847
+
+Keywords: CRISPR-Cas9, base editing, sickle cell disease, gene therapy, hemoglobin, hematopoietic stem cells
+
+Abstract:
+Sickle cell disease (SCD) affects approximately 20 million people worldwide and is caused
+by a single-nucleotide variant (E6V) in the beta-globin gene (HBB). While ex vivo gene
+therapies have shown clinical promise, they require myeloablative conditioning and are
+prohibitively expensive for most affected populations. Here we report the development of
+a lipid nanoparticle (LNP)-delivered adenine base editor (ABE8e) that converts the sickle
+mutation (HBB c.20A>T) back to the wild-type sequence in hematopoietic stem and progenitor
+cells (HSPCs) in vivo. In a humanized SCD mouse model (Townes), a single intravenous
+administration of LNP-ABE8e achieved 43 +/- 7% editing efficiency in bone marrow HSPCs
+at 16 weeks post-treatment. Treated mice showed a significant increase in normal adult
+hemoglobin (HbA) from 0% to 38 +/- 5% of total hemoglobin, with a concomitant reduction
+in sickling under hypoxic conditions (p < 0.001). No off-target editing was detected at
+the top 50 predicted sites by GUIDE-seq analysis. These results demonstrate the feasibility
+of in vivo base editing as a one-time, accessible treatment for sickle cell disease.

@@ -1,0 +1,43 @@
+Machine Learning Engineer
+MedVision Health
+
+Location: Boston, MA (Hybrid)
+Department: AI Research and Engineering
+Employment: Full-time
+Salary Range: $160,000 - $200,000
+
+Company Background:
+MedVision Health is a healthcare AI company developing FDA-cleared diagnostic tools
+powered by deep learning. Our products are used in over 300 hospitals across the US
+and Europe, helping radiologists detect early-stage cancers with greater accuracy.
+
+Position Summary:
+We are seeking an ML Engineer to join our core AI team. You will develop, optimize,
+and deploy deep learning models for medical image analysis. This role bridges research
+and production -- you will take models from prototype to clinical deployment while
+ensuring they meet the rigorous quality standards required for medical devices.
+
+Requirements:
+- M.S. or Ph.D. in Computer Science, Electrical Engineering, or related field
+- 3+ years of hands-on experience training and deploying deep learning models
+- Strong PyTorch skills (model development, custom training loops, distributed training)
+- Experience with computer vision architectures (CNNs, Vision Transformers, U-Net variants)
+- Familiarity with medical imaging formats and standards (DICOM, HL7 FHIR)
+- Experience with model optimization (quantization, pruning, ONNX export)
+- Understanding of FDA software validation requirements (IEC 62304) is a strong plus
+- Publications in top ML/CV venues (NeurIPS, ICML, CVPR, MICCAI) preferred
+
+Description:
+You will work on developing next-generation diagnostic models, improving inference
+latency for real-time clinical use, building robust data pipelines for multi-site
+medical imaging data, and collaborating with clinical partners to validate model
+performance in prospective studies.
+
+Benefits:
+- Stock options in a pre-IPO company
+- Premium health insurance (medical, dental, vision)
+- 20 days PTO + 5 sick days
+- Conference attendance budget
+- Flexible work schedule (core hours 10am-3pm)
+- On-site gym and wellness programs
+- 12 weeks parental leave

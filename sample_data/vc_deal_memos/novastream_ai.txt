@@ -1,0 +1,53 @@
+DEAL MEMO -- NOVASTREAM AI
+Analyst: Rachel Torres | Date: 2025-11-14
+Fund: Horizon Ventures Fund III
+
+Company: NovaStream AI
+Sector: Computer Vision / Video Analytics
+Stage: Series A
+Founded: 2023
+
+FOUNDERS
+  CEO: Marcus Webb -- ex-Google Brain, 8 yrs ML research, 2 patents in real-time object detection
+  CTO: Lena Okafor -- ex-Tesla Autopilot team lead, built their pedestrian detection pipeline
+  (Met both. Strong technical depth. Marcus is a clear communicator, good with customers.
+   Lena is quieter but deeply impressive when talking architecture.)
+
+ASK & TERMS
+  Raising: $12M Series A
+  Pre-money valuation: $48M
+  Lead investor: us (seeking)
+  Use of funds: 60% R&D hiring, 25% go-to-market, 15% infrastructure
+
+TRACTION
+  ARR: $1.8M (up from $320K twelve months ago -- 5.6x growth)
+  Customers: 14 paying (3 enterprise: Walmart, Cushman & Wakefield, Simon Property Group)
+  Pipeline: $4.2M in late-stage conversations
+  NDR: 142% -- existing customers expanding fast
+  Churn: zero logo churn since launch
+
+PRODUCT
+  Real-time video analytics platform for retail and commercial real estate.
+  Camera-agnostic -- works with existing CCTV infrastructure (huge selling point).
+  Core modules: foot traffic counting, heatmaps, queue detection, theft prevention.
+  New module in beta: customer demographic insights (age/gender estimation, non-PII).
+
+COMPETITIVE LANDSCAPE
+  RetailNext -- incumbent, hardware-dependent, slow to innovate. ~$80M ARR.
+  Sightcorp -- EU-based, strong in airports, weak in retail.
+  Placer.ai -- different approach (mobile data), complementary not competitive.
+  NovaStream wins on: (1) no hardware lock-in, (2) 10x faster inference, (3) pricing.
+
+RISKS
+  - Concentration: top 3 customers are 62% of ARR. Need to diversify.
+  - Privacy regulation: facial analytics is a political lightning rod. Their "no PII"
+    stance is good but may not be enough if regulation tightens.
+  - Lena is a single point of failure for core ML -- need to hire senior ML fast.
+
+MY TAKE
+  This is the best Series A I've seen this quarter. 5.6x revenue growth with zero churn
+  is exceptional. The founders have real domain expertise and the product-market fit is
+  obvious from customer expansion rates. The $48M valuation feels fair for the traction.
+  Main concern is customer concentration -- need a plan to sign 10+ mid-market deals.
+
+RECOMMENDATION: INVEST -- requesting IC vote for $6M allocation

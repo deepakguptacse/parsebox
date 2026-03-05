@@ -1,0 +1,84 @@
+DEAL MEMO -- LEAPFROG EDUCATION
+Analyst: Rachel Torres | Date: 2025-09-30
+Fund: Horizon Ventures Fund III
+
+Company: LeapFrog Education
+Sector: EdTech / Adaptive Learning
+Stage: Seed
+Founded: 2024
+
+FOUNDERS
+  CEO: Kwame Asante -- former math teacher (6 years, Atlanta public schools),
+  then PM at Khan Academy for 3 years. Understands both classroom and product.
+  CTO: Natasha Volkov -- ex-Duolingo ML team. Built their placement test algorithm.
+
+ASK & TERMS
+  Raising: $2.5M Seed
+  Pre-money valuation: $10M
+  Structure: priced round
+  Use of funds: product build, 3 school district pilots, content development
+
+TRACTION
+  Pre-product. Currently in prototype with 3 Atlanta schools (pro bono pilots).
+  Early results from 450 students: 32% improvement in math assessment scores over
+  8 weeks compared to control group. Small sample but the signal is strong.
+
+  Kwame has LOIs from 5 school districts (Atlanta, Charlotte, Nashville, Birmingham,
+  Memphis) totaling $400K annual value if product launches by August 2026.
+
+PRODUCT
+  AI-powered adaptive math tutoring for K-8 students, specifically designed for
+  under-resourced schools.
+
+  Key differentiators from existing EdTech:
+  1. Works OFFLINE -- app caches lessons and syncs when connected. Critical for
+     students without reliable internet at home. (This is Kwame's insight from
+     teaching: 40% of his students didn't have home internet.)
+  2. Adaptive in real-time -- adjusts difficulty, teaching style, and examples
+     based on student responses. Not just "easier/harder" but different approaches
+     to explanation.
+  3. Teacher dashboard -- teachers see exactly where each student is stuck.
+     Replaces guesswork with data.
+  4. Culturally responsive content -- problems and examples reflect diverse
+     backgrounds. Students engage more when they see themselves in the content.
+
+  Target: $3-5 per student per month for school districts.
+  Average district they're targeting: 8,000-15,000 students.
+
+COMPETITIVE LANDSCAPE
+  Khan Academy -- free, excellent, but not adaptive and not designed for school adoption.
+  DreamBox (acquired by Discovery Ed) -- adaptive math, but $12/student/month. Too
+  expensive for under-resourced schools.
+  IXL -- practice-focused, not adaptive teaching. Popular but shallow.
+  Zearn -- good product, but no offline mode and limited personalization.
+  LeapFrog wins on: price point, offline capability, cultural responsiveness.
+
+RISKS
+  - Edtech is a graveyard. School district sales are brutal -- slow procurement,
+    tiny budgets, champion turnover. Many good edtech companies have died here.
+  - Pre-product. The prototype results are encouraging but it's a long way from
+    a prototype to a scalable product with real content depth.
+  - Kwame is a first-time founder. Brilliant product thinker but needs help on
+    business/fundraising side.
+  - The $3-5/student price point may not support the business. Need to model
+    unit economics carefully at scale.
+  - Content creation for K-8 math across multiple grade levels is MASSIVE scope.
+
+MY TAKE
+  I want to love this one more than I do. Kwame is the kind of mission-driven
+  founder who deeply understands the problem -- his 6 years in the classroom give him
+  insights that most EdTech founders lack. The offline-first design is genuinely
+  innovative and solves a real equity issue.
+
+  But the business model scares me. Under-resourced schools = under-resourced
+  budgets. The sales cycle will be painful. And content creation at this scope
+  requires significant capital that $2.5M won't cover.
+
+  The 32% improvement stat is remarkable if it holds up at scale. If they can
+  prove it in a larger study, grant funding (Gates Foundation, Chan Zuckerberg)
+  could be a bridge to sustainability.
+
+  At $10M pre, the entry point is fine. But I think this needs a lead investor
+  with deep EdTech expertise and relationships. We're not that fund.
+
+RECOMMENDATION: PASS -- not in our sweet spot. Referring to NewSchools Venture Fund.

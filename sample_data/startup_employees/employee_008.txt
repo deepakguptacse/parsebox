@@ -1,0 +1,23 @@
+EMPLOYEE RECORD
+
+Name: Tom Nakamura
+Employee ID: EMP-1008
+Department: Finance
+Title: Financial Analyst
+Location: New York, NY
+Start Date: 2023-09-18
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $120,000
+  Equity: 6,000 shares (4-year vest, 1-year cliff)
+  Signing Bonus: $8,000
+
+Skills: Financial modeling, Excel, Python, SQL, Looker, budgeting
+Education: B.S. Finance, NYU Stern (2020)
+
+Performance Reviews:
+  2024 H2: Meets expectations -- Built monthly reporting dashboard for leadership
+  2024 H1: Exceeds expectations -- Identified $340K in cost savings across vendors
+
+Manager: Kevin Zhao (EMP-0610)

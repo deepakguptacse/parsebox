@@ -1,0 +1,23 @@
+EMPLOYEE RECORD
+
+Name: Carlos Rivera
+Employee ID: EMP-1006
+Department: Engineering
+Title: DevOps Engineer
+Location: Remote (Denver, CO)
+Start Date: 2023-04-10
+Employment Type: Full-time
+
+Compensation:
+  Base Salary: $170,000
+  Equity: 12,000 shares (4-year vest, 1-year cliff)
+  Signing Bonus: $15,000
+
+Skills: Terraform, AWS, GCP, Docker, Kubernetes, CI/CD, monitoring
+Education: B.S. Computer Science, Colorado School of Mines (2016)
+
+Performance Reviews:
+  2024 H2: Exceeds expectations -- Zero downtime during Black Friday (99.99% uptime)
+  2024 H1: Meets expectations -- Migrated CI/CD from Jenkins to GitHub Actions
+
+Manager: David Park (EMP-0892)

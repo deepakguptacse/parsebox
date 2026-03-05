@@ -1,0 +1,35 @@
+Senior Software Engineer
+NovaTech Solutions (Series B Startup)
+
+Location: San Francisco, CA (Hybrid - 3 days in office)
+Job Type: Full-time
+Salary Range: $180,000 - $220,000 per year
+
+About the Company:
+NovaTech Solutions is building the next generation of developer tools for cloud-native
+applications. We are a 45-person team backed by Tier 1 VCs with $28M in funding.
+
+Job Description:
+We are looking for a Senior Software Engineer to join our Platform team. You will design
+and build core infrastructure services that power our developer platform, working closely
+with product and design to ship features that delight developers. You will mentor junior
+engineers and contribute to architectural decisions that shape the product roadmap.
+
+Requirements:
+- 5+ years of professional software development experience
+- Strong proficiency in Go or Rust
+- Experience with distributed systems and microservices architecture
+- Familiarity with Kubernetes and container orchestration
+- Solid understanding of database internals (PostgreSQL, Redis)
+- Experience with CI/CD pipelines and infrastructure-as-code
+- Strong communication skills and ability to work cross-functionally
+- B.S. in Computer Science or equivalent experience
+
+Benefits:
+- Competitive equity package (0.05% - 0.15%)
+- Health, dental, and vision insurance (100% covered)
+- Unlimited PTO with minimum 3 weeks encouraged
+- $2,000 annual learning and development budget
+- Home office setup stipend ($1,500)
+- Weekly catered lunches
+- 401(k) with 4% company match

@@ -1,0 +1,43 @@
+DevOps Engineer (Remote)
+
+Company: CloudShift IO
+Location: Remote (US time zones preferred, open to global candidates)
+Type: Full-time
+Salary: $140,000 - $175,000 USD (adjusted for location)
+
+---
+
+About CloudShift IO:
+We are a fully remote infrastructure automation company with 120 team members across
+15 countries. We help enterprises modernize their deployment pipelines and achieve
+reliable, repeatable infrastructure at scale.
+
+Role Summary:
+As a DevOps Engineer, you will build and maintain the CI/CD infrastructure that our
+customers depend on. You will work directly with customer engineering teams to design
+deployment pipelines, improve observability, and ensure high availability of production
+systems.
+
+Requirements:
+- 4+ years of experience in DevOps, SRE, or platform engineering
+- Deep expertise with Terraform or Pulumi for infrastructure-as-code
+- Production experience with AWS (required) and GCP or Azure (nice to have)
+- Strong Kubernetes knowledge (CKA certification preferred)
+- Experience with GitOps workflows (ArgoCD, Flux)
+- Proficiency in at least one programming language (Python, Go, or Bash)
+- Experience with monitoring and observability tools (Prometheus, Grafana, Datadog)
+- Familiarity with security best practices (secrets management, network policies)
+
+Nice to Have:
+- Experience with service mesh (Istio, Linkerd)
+- Contributions to open-source infrastructure projects
+- Experience in a customer-facing consulting role
+
+Benefits:
+- Fully remote with flexible hours
+- $3,000 annual home office budget
+- 4 weeks PTO + local public holidays
+- Health insurance stipend ($500/month)
+- Annual company retreat (past locations: Lisbon, Bali, Montreal)
+- Learning budget ($2,500/year for courses and conferences)
+- Equipment provided (MacBook Pro + peripherals)

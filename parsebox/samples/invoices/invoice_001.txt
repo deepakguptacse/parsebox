@@ -1,0 +1,37 @@
+INVOICE
+
+Acme Corp
+123 Industrial Way
+Springfield, IL 62701
+USA
+
+Invoice Number: INV-2025-0042
+Invoice Date: 2025-01-15
+Due Date: 2025-02-14
+Payment Terms: Net 30
+
+Bill To:
+  Riverside Manufacturing Inc.
+  456 Commerce Blvd
+  Chicago, IL 60601
+
++----------------------------------------------+-------+------------+------------+
+| Description                                  |  Qty  | Unit Price | Amount     |
++----------------------------------------------+-------+------------+------------+
+| Industrial Widget A (Part #WA-100)           |   50  |   $24.99   |  $1,249.50 |
+| Heavy-Duty Bracket B (Part #HB-200)         |  100  |   $12.50   |  $1,250.00 |
+| Precision Gear Assembly C (Part #PG-300)     |   25  |   $89.00   |  $2,225.00 |
++----------------------------------------------+-------+------------+------------+
+
+                                              Subtotal:    $4,724.50
+                                              Tax (8.25%): $  389.77
+                                              TOTAL DUE:   $5,114.27
+
+Currency: USD
+
+Payment Instructions:
+  Bank: First National Bank
+  Account: 9876543210
+  Routing: 071000013
+
+Thank you for your business!

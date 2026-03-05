@@ -1,0 +1,60 @@
+DEAL MEMO -- GREENLOOP
+Analyst: James Nakamura | Date: 2025-10-28
+Fund: Horizon Ventures Fund III
+
+Company: GreenLoop
+Sector: Circular Economy / CleanTech
+Stage: Seed
+Founded: 2024
+
+FOUNDERS
+  CEO: Amara Diallo -- materials scientist, ex-Dow Chemical (12 years). Led their
+  recycled plastics division. Published 9 papers on polymer reprocessing.
+  COO: Raj Mehta -- ops background, scaled two logistics startups (one acquired by XPO).
+
+ASK & TERMS
+  Raising: $3.5M Seed
+  Pre-money valuation: $14M
+  Structure: SAFE with MFN
+  Use of funds: build pilot facility, hire 4 engineers, first commercial contracts
+
+TRACTION
+  Pre-revenue. Two signed LOIs from packaging companies ($600K combined annual value).
+  Pilot running at UC Davis -- converting agricultural plastic waste to food-grade pellets
+  at 40% lower cost than virgin plastic. Published results in Nature Materials (Jan 2025).
+
+PRODUCT / TECHNOLOGY
+  Proprietary catalytic process that breaks down mixed plastic waste into food-grade resin.
+  Key differentiator: handles mixed/contaminated streams that competitors can't touch.
+  Current recycling captures ~9% of plastic waste. GreenLoop's tech could push that to 35-40%.
+
+  Their process:
+  1. Intake: mixed plastic waste (no sorting needed -- this is huge)
+  2. Catalytic depolymerization at 280C (vs 600C for pyrolysis competitors)
+  3. Purification and repolymerization
+  4. Output: food-grade PET and HDPE pellets
+
+  Energy cost per ton: ~$180 (competitors: $400-800)
+
+COMPETITIVE LANDSCAPE
+  Plastic Energy (UK) -- pyrolysis, raised $170M. High energy costs.
+  PureCycle Technologies (public) -- single-polymer only (polypropylene). Narrow.
+  Novamont (Italy) -- bioplastics, different market entirely.
+  GreenLoop wins on: feedstock flexibility and energy efficiency.
+
+RISKS
+  - Pre-revenue. Science risk: pilot works at UC Davis but scaling is unproven.
+  - Regulatory: food-grade certification for recycled plastic is a 12-18 month process.
+  - Capital intensive: will need $20-30M Series A to build first commercial facility.
+  - Amara is brilliant but first-time CEO. Needs coaching on fundraising narrative.
+
+MY TAKE
+  High-risk, high-reward seed bet. If the tech scales, this is a category-defining company
+  in a $500B+ market. The Nature Materials publication is strong validation. Amara is the
+  real deal scientifically. Raj brings the operational grounding they need. At $14M pre,
+  the entry point is reasonable for the risk profile.
+
+  Biggest concern: the capital intensity. This will need a LOT more money, and climate
+  tech fundraising has cooled. But if we get in at seed and it works, 50-100x is plausible.
+
+RECOMMENDATION: INVEST -- $1.5M allocation from seed reserve

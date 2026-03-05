@@ -1,0 +1,74 @@
+DEAL MEMO -- PETAJOULE ENERGY
+Analyst: James Nakamura | Date: 2025-11-02
+Fund: Horizon Ventures Fund III
+
+Company: Petajoule Energy
+Sector: Clean Energy / Battery Storage
+Stage: Series A
+Founded: 2022
+
+FOUNDERS
+  CEO: Ingrid Solberg -- Norwegian, ex-Northvolt (head of business development).
+  Before that, 6 years at McKinsey in energy practice. MBA from INSEAD.
+  CTO: Dr. Wei Zhang -- battery chemist, 4 years at CATL's advanced research lab.
+  Published 31 papers on solid-state batteries. 7 patents.
+
+ASK & TERMS
+  Raising: $25M Series A
+  Pre-money valuation: $100M
+  Lead: Breakthrough Energy Ventures (committed $15M)
+  Use of funds: pilot manufacturing line, 12 engineers, UL certification
+
+TRACTION
+  Pre-revenue. Two paid development agreements:
+  - $1.2M with a major European utility (Vattenfall) for grid storage pilot
+  - $800K with a US commercial real estate developer for building-integrated storage
+  Total contracted value: $2M
+  LOIs: $7.5M pipeline from 5 additional customers
+
+TECHNOLOGY
+  Iron-air battery for long-duration energy storage (LDES). 100+ hour discharge duration.
+
+  Why this matters: lithium-ion maxes out at ~4 hours. For grid stability with
+  high renewable penetration, you need storage that can cover multi-day weather events
+  (e.g., a windless week in January). Iron-air can do this at 1/10th the cost of lithium.
+
+  Their innovation: proprietary electrode architecture that solves the cycling degradation
+  problem. Lab cells show 5000+ cycles with <8% capacity loss (best in class).
+
+  Target cost: $20/kWh at scale (lithium-ion is $140/kWh). Game-changing if they hit it.
+
+  Current status: lab-proven, building first 1MWh pilot unit at a facility in Austin, TX.
+
+COMPETITIVE LANDSCAPE
+  Form Energy -- backed by Breakthrough Energy, building iron-air at scale. $800M raised.
+  This is the big one. Form is 3-4 years ahead on manufacturing.
+  ESS Inc (public) -- iron flow batteries. Different chemistry, lower energy density.
+  Ambri -- liquid metal batteries. Promising but even earlier than Petajoule.
+
+RISKS
+  - Form Energy: they're the 800-pound gorilla. Same chemistry, massive head start.
+    Petajoule's electrode innovation is the differentiator, but Form could replicate
+    or acquire. (Ingrid's pitch: Form's approach has a ceiling on cycling life that
+    their architecture doesn't. Needs validation.)
+  - Manufacturing: going from lab to production is where battery startups die. Every.
+    Single. Time. Wei has CATL manufacturing experience, which helps.
+  - $100M pre for pre-revenue is aggressive. BUT Breakthrough Energy leading at this
+    valuation provides strong validation.
+  - Timeline: 2-3 years minimum to commercial product. Long hold for us.
+
+MY TAKE
+  This is a pure deep-tech bet. If Petajoule's electrode architecture really solves
+  cycling degradation better than Form Energy, they have a shot at a massive market.
+  Long-duration storage is the missing piece of the energy transition -- whoever cracks
+  it will build a $50B+ company.
+
+  Breakthrough Energy leading gives me confidence. Bill Gates's team does more diligence
+  on climate tech than anyone. They also invested in Form Energy, so they're hedging --
+  which is either smart diversification or a sign that Form isn't a lock.
+
+  My hesitation: the valuation. $100M pre for a pre-revenue battery company is painful.
+  But the alternative is missing out on the category entirely. Deep tech requires
+  conviction and patience.
+
+RECOMMENDATION: INVEST -- $5M allocation alongside Breakthrough Energy

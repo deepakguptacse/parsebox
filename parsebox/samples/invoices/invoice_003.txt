@@ -1,0 +1,36 @@
+TechParts Ltd
+Unit 7, Innovation Park
+Cambridge CB2 1TN, United Kingdom
+
+------------------------------------------------------------
+                        TAX INVOICE
+------------------------------------------------------------
+
+Invoice #:     TP-84321
+Date Issued:   March 10, 2025
+Due Date:      May 9, 2025
+Terms:         Net 60
+
+Customer:      Quantum Dynamics Corp
+               8900 Tech Center Drive
+               San Jose, CA 95134, USA
+
+------------------------------------------------------------
+ITEMS:
+------------------------------------------------------------
+
+  Microcontroller Unit MCU-X7     x  200   @  $8.75 ea  =  $1,750.00
+  Sensor Array Module SA-12       x   50   @ $34.20 ea  =  $1,710.00
+  Power Supply Board PS-500       x   75   @ $22.00 ea  =  $1,650.00
+  Custom Cable Harness CH-3M      x  300   @  $3.50 ea  =  $1,050.00
+
+------------------------------------------------------------
+                                     Subtotal:  $6,160.00
+                                     Sales Tax (0%): $0.00
+                                     Total:     $6,160.00
+------------------------------------------------------------
+
+Currency: USD
+
+Notes: Export sale - zero-rated for VAT purposes.
+       All items shipped FOB origin.

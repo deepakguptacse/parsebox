@@ -1,0 +1,40 @@
+==================================================
+Manufacturing Co - INVOICE
+==================================================
+
+Vendor:   Manufacturing Co
+Address:  4500 Factory Lane, Detroit, MI 48201
+
+Invoice Number: MFG-2025-00789
+Invoice Date:   2025-03-01
+Due Date:       2025-03-31
+Terms:          Net 30
+
+Billed To:
+  AutoBuild Systems
+  700 Assembly Drive
+  Toledo, OH 43604
+
+ITEM                            QTY    UNIT PRICE    AMOUNT
+---------------------------------------------------------------
+Steel Plate 4x8 (1/4 in)        20      $145.00    $2,900.00
+Aluminum Rod 6ft (1 in dia)     100       $18.50    $1,850.00
+Welding Wire ER70S-6 (33lb)      10       $42.00      $420.00
+Cutting Fluid (5 gal)             5       $67.00      $335.00
+Safety Gloves (box of 50)        12       $28.00      $336.00
+---------------------------------------------------------------
+
+                              Subtotal:         $5,841.00
+                              Volume Discount (10%): -$584.10
+                              Subtotal after Discount: $5,256.90
+                              Tax (6%):           $315.41
+                              TOTAL:            $5,572.31
+
+Currency: USD
+
+Discount applied: 10% volume discount for orders over $5,000.
+
+Remit payment to:
+  Manufacturing Co
+  PO Box 9900, Detroit, MI 48201
+==================================================
